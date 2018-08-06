@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="css/styling.css">
+	<link rel="stylesheet" type="text/css" href="script/calculations.js">
+</head>
+<body>
+
+	<form name="secondCalculator" class="secondCalculator">
+
+		<div class="inputBox">
+			<input type="text" name="inputBox">
+			<!-- input box -->
+		</div>
+
+	    <div class="buttons">
+	    	<!-- buttons -->
+				<input type="button" name="reset" value="AC"
+				onclick="secondCalculator.inputBox.value = ''" class="grey">
+				<input type="button" name="average" value="AVG"
+				onclick="getAverage()" class="grey">
+				<input type="button" name="percentage" value="%"
+				onclick="secondCalculator.inputBox.value += '%'" class="grey">
+				<input type="button" name="divider" value="÷"
+				onclick="secondCalculator.inputBox.value += '/'" class="orange">
+				<input type="button" name="seven" value="7"
+				onclick="secondCalculator.inputBox.value += '7'" class="grey">
+				<input type="button" name="eight" value="8"
+				onclick="secondCalculator.inputBox.value += '8'" class="grey">
+				<input type="button" name="nine" value="9"
+				onclick="secondCalculator.inputBox.value += '9'" class="grey">
+				<input type="button" name="by" value="x"
+				onclick="secondCalculator.inputBox.value += '*'" class="orange">
+				<input type="button" name="four" value="4"
+				onclick="secondCalculator.inputBox.value += '4'" class="grey">
+				<input type="button" name="five" value="5"
+				onclick="secondCalculator.inputBox.value += '5'" class="grey">
+				<input type="button" name="six" value="6"
+				onclick="secondCalculator.inputBox.value += '6'" class="grey">
+				<input type="button" name="minus" value="-"
+				onclick="secondCalculator.inputBox.value += '-'" class="orange">
+				<input type="button" name="one" value="1"
+				onclick="secondCalculator.inputBox.value +='1'" class="grey">
+				<input type="button" name="two" value="2"
+				onclick="secondCalculator.inputBox.value += '2'" class="grey">
+				<input type="button" name="three" value="3"
+				onclick="secondCalculator.inputBox.value += '3'" class="grey">
+				<input type="button" name="plus" value="+"
+				onclick="secondCalculator.inputBox.value += '+'" class="orange">
+				<input type="button" name="cero" value="0"
+				onclick="secondCalculator.inputBox.value += '0'" class="grey">
+				<input type="button" name="leftParentesis" value="("
+				onclick="secondCalculator.inputBox.value += '('" class="grey">
+				<input type="button" name="rightParentesis" value=")"
+				onclick="secondCalculator.inputBox.value += ')'" class="grey">
+				<input type="button" name="equal" value="="
+				onclick="secondCalculator.inputBox.value =
+				eval(secondCalculator.inputBox.value)"
+				class="orange">
+				<!-- <input type="button" name="dot" value="."
+				onclick="secondCalculator.inputBox.value += '.'" class="grey"> -->
+			</div>
+     </form>
+
+<script type="text/javascript">
+
+	function getAverage() {
+	secondCalculator.inputBox.value = eval(secondCalculator.inputBox.value)/
+	secondCalculator.inputBox.value.split("+").length;
+}
+
+</script>
+</body>
+</html>

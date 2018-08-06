@@ -1,0 +1,35 @@
+body{
+	background-color: black;
+}
+
+.grey{
+  background-color: grey;
+}
+
+.orange {
+  background-color: orange;
+}
+/* to color the bottons on the far right of the calculator */
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows:repeat(7,1fr);
+  width: 10%;
+  margin: 0 auto;
+	border-
+}
+/* bottons of the calculator */
+
+.inputBox {
+  padding-top: 50px;
+  display: grid;
+  width: 10%;
+  margin: 0 auto;
+  grid-column: span 4;
+}
+/* input box for the calculator */
+
+#calculator{
+  margin-top: 70px;
+}
